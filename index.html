@@ -4,16 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo Práctico Obligatorio 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            margin: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0;
+            color: #23d5ab;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        li {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-top: 2rem;
+            padding: 1rem;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            color: #e73c7e;
+        }
+    </style>
 </head>
 <body>
-    <h1>Grupo: Tech Moms</h1>
-    <h2>Integrantes:</h2>
-    <ul>
-        <li>Daniela Homobono</li>
-        <li>Verónica Hassen</li>
-        <li>Romina Zagordo</li>
-    </ul>
-    <h2>Trabajo Práctico Obligatorio 2</h2>
+    <div class="container">
+        <h1>Grupo: Tech Moms</h1>
+        <h2>Integrantes:</h2>
+        <ul>
+            <li>Daniela Homobono</li>
+            <li>Verónica Hassen</li>
+            <li>Romina Zagordo</li>
+        </ul>
+        <h2 class="title">Trabajo Práctico Obligatorio 2</h2>
+    </div>
     <script src="main.js"></script>
 </body>
 </html> 
