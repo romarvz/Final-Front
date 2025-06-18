@@ -82,6 +82,34 @@
             border-top: 2px solid rgba(255, 255, 255, 0.2);
             color: #e73c7e;
         }
+        
+        .instructions {
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+        }
+        
+        .instructions p {
+            margin: 0.5rem 0;
+        }
+        
+        .console-btn {
+            background-color: #23a6d5;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .console-btn:hover {
+            background-color: #1c8aaf;
+        }
     </style>
 </head>
 <body>
@@ -94,7 +122,21 @@
             <li>Romina Zagordo</li>
         </ul>
         <h2 class="title">Trabajo Práctico Obligatorio 2</h2>
+        
+        <div class="instructions">
+            <p>Este trabajo práctico consiste en 10 ejercicios de JavaScript que incluyen:</p>
+            <ul>
+                <li>Funciones básicas</li>
+                <li>Manipulación de strings</li>
+                <li>Algoritmos</li>
+                <li>Métodos de arrays (forEach, map, filter, find, reduce)</li>
+            </ul>
+            <p>Para ver los resultados, abre la consola del navegador (F12 o click derecho → Inspeccionar → Consola)</p>
+            <p>La función 5 (Edad canina) te pedirá ingresar un valor cuando cargue la página.</p>
+        </div>
+        
+        <button class="console-btn" onclick="alert('Abre la consola del navegador para ver los resultados (F12 o click derecho → Inspeccionar → Consola)')">Ver instrucciones</button>
     </div>
     <script src="main.js"></script>
 </body>
-</html> 
+</html>
